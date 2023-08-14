@@ -1,0 +1,47 @@
+1.what is softwere?explain types of softwere.
+
+
+answer]
+          softwere is a collection of information,instruction and data.without softwere, most computers are useless.for a example web browser is a software application that allows users to access the internet.
+
+                                          [types of software]
+
+1] system software:
+                  system software can be desinged as the software in such way so that it can control and work with computer hardware.examples of system software is operting system(microsoft,windows,android,apple).
+
+2] application software:
+
+                        [three types of application software]
+ 
+ 1-Mobile application: Which runs in mobile.example(whatspp,instagram,telegram)
+ 2-web application: That application runs in web browser.example(chorome,uc browser)
+ 3-Desktop application: That application runs in computer and laptop.Example(powerpoint)
+ 
+                       
+3] programing software:
+                       Programming software is a software which helps the programmer in developing other software. 
+
+				[Types of programing software]
+
+1-POP(Proceger Oriented Programing):C language
+2-OOP(Object Oriented Programing)  :C++ language
+3-Logical Programing               :logical language
+4-Functional Programing            :Python language
+5-Scripted Programing              :java script
+
+4] Driver Software:
+                    Driver software controls the computer to perform certain function.such as the driver software required to play any audio.
+examle(vidio driver ,usb driver)
+
+5] Middleware :
+                Middleware software is used as an intermediary. Middleware software is used as a mediator between different types of applications.
+                 software that fits in the middle between applications and operating system.
+               example(database)
+
+2.Explain the SDLC each phase process.
+
+                                       Software Development Life Cycle is a process used by the software industry to design, develop and test high quality softwares.
+
+                                 Requirement→ Planning→ Analysis→ Design→ Implementation→ Testing&Integration→ Maintaince
+                             
+Every time this process happens.
