@@ -1,0 +1,30 @@
+2. What is OOP? List OOP concepts
+
+oop->oop is object oriented programing language.OOP is faster and easilier compiler.
+
+->List of OOP concepts.
+
+->Class
+->Object
+->Abstraction
+->Encapsulation
+->Inheritance
+->Polymorphism
+
+
+3.What is the difference between OOP and POP?
+
+       -> OOP <-
+
+->OOP stands for Object Oriented Programing.
+->OOP follows bottom to up approach.
+->OOP is faster then pop.
+->Data can be hidden using encapsulation. 	
+
+
+        -> POP <-
+
+->POP stands for procedural oriented programing.
+->POP follows Top to bottom approach.
+->POP is slower compare to OOP.	
+-> no data hiding in pop.	
