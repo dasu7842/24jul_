@@ -6,7 +6,7 @@ ans-> Databse is usesually controlled by a databse managemnent system.
 2.What is Normalization?
 ans-> Normalization is the process of Oraganizing the data in the database.
       Normalizition is the process to eliminate data redundancy and enhance data intergrity in the table.
-      Normalizition delete duplicate data.
+      Normalization prevents duplicate data from coming in.
 
 3.What is difference between DBMS and RDBMS?
 ans->         -> DBMS <-
@@ -31,3 +31,75 @@ ans->         -> DBMS <-
 
 4.What is MF Cod Rule of RDBMS Systems?
 ans->
+       ->Rule 1 : The Foundation Rule
+ ->Rule 2 : The Information Rule
+ ->Rule 3 : The Guaranteed Access Rule
+ ->Rule 4 : Systematic Treatment Of NULL Value
+ ->Rule 5 : Distribution Independence
+ ->Rule 6 : The View Updating Rule
+ ->Rule 7 : High-Level Insert, Update & Delete Rule
+ ->Rule 8 : Physical Data Independence
+ ->Rule 9 : Logical Data Independence
+ ->Rule 10: Integrity Independence
+ ->Rule 11: The Comprehensive Data Sublanguage Rule
+ ->Rule 12: The Non-subversion Rule
+
+5. What do you understand By Data Redundancy?
+ans->
+      data redundancy is when an organization store the same data in multiple place at the same time.
+
+6. What is DDL Interpreter?
+
+ans->  Full Form:
+                "data definition language ."
+    ->>DDL used to build and modify the structure of table .
+
+->DDL Query <- 
+    CREATE  : use the create database and table
+    USE     : to use in database
+    DESC    : see the structure of the table
+    DROP    : delete database,table and column
+    ALTER   : add column,key constraints and auto_increment
+    UPDATE  : update all detail
+
+
+ 
+7. What is DML Compiler in SQL? 
+
+ans-> Full Form:
+                "Data manipulation language."
+->DML Query<-
+               INSERT   : use data insert into table
+               UPDATE   : use data update in table 
+               DELETE   : use delete records from database
+               TRUNCATE : use delete all records from database
+
+8.What is SQL Key Constraints writing an Example of SQL Key Constraints
+
+ans -> SQL constraints are used to specify rules for the data table
+  
+  - NOTE NULL   -> column have not null value
+  - UNIQUE      -> colume have unique data
+  - PRIMARY KEY ->  use unique data and not null value,combination of a not null and unique 
+  - FOREIGN KEY -> use raference on other table
+
+9.What is save Point? How to create a save Point write a Query?
+
+->The savepoint is use for dividing,breaking a transaction.
+->save point use statement multi time use.
+
+ - create savepoint savepoint_name;
+ - create savepoint savepoint1;
+
+
+10.What is trigger and how to create a Trigger in SQL
+
+ -> trigger use to store data in database in automatically.
+ -> Every trigger has a table attache
+ -> Triggers automatically fire and save when data is update and insert
+ -> trigger save history of data in automatically
+
+ - DELIMITER $$ create trigger trigger_name (after|before) {insert|update|delete} on table_name for each row 
+   begin
+   insert into table_name set column_name = new.column_name
+   END$$
