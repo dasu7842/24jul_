@@ -1,0 +1,33 @@
+1.What do you understand by database?
+ans-> Databse is usesually controlled by a databse managemnent system.
+      Database is organised a collection of structured information or data.
+
+
+2.What is Normalization?
+ans-> Normalization is the process of Oraganizing the data in the database.
+      Normalizition is the process to eliminate data redundancy and enhance data intergrity in the table.
+      Normalizition delete duplicate data.
+
+3.What is difference between DBMS and RDBMS?
+ans->         -> DBMS <-
+
+       ->Database management systeam.
+       ->Data stored is in the file format.
+       ->Individual access of data elements.
+       ->Data stored is a small quaninty.
+       ->This is normalization.
+       ->DBMS support a single user.
+       ->XML,Microsoft Access.
+
+               -> RDBMS <-
+
+        ->Relational database management systeam.
+        ->Data stored in the table format.
+        ->Multiple data elements are accesible together.
+        ->Data store in the large amount.
+        ->Normalizition is not achievable.
+        ->RDBMS supports multiple users.
+        ->Oracle,SQL servers.
+
+4.What is MF Cod Rule of RDBMS Systems?
+ans->
