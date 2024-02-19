@@ -1,11 +1,11 @@
-//WAP to print “Hello World” using C++
+//WAP to print â€œHello Worldâ€ using C++
 
 #include<iostream>
-using namespace std;
+using namespace std; //libray file
 
-int main()
+int main()  //main function
 {
-	cout<<"Hello world";
+	cout<<"Hello world";  to print
 	
 	return 0;
 }
