@@ -6,11 +6,11 @@ class matrix
 {
 public:
     
-    int a1[5];
-    int i;
+    int a1[5];  //array to store the matrix
+    int i;     //varible
 
 
-    void get()
+    void get()  //function
     {
         cout << "Enter array elements: ";
         for (i = 0; i < 5; i++)
@@ -20,10 +20,10 @@ public:
     }
 
    
-    matrix operator+(matrix &m2)
+    matrix operator+(matrix &m2)  //overloded operator
     {
         matrix m3;
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++) //loop
         {
             m3.a1[i] = a1[i] + m2.a1[i];
         }
@@ -31,7 +31,7 @@ public:
     }
 
     
-    void display()
+    void display()  //function
     {
         cout << "Addition: ";
         for (int i = 0; i < 5; i++)
@@ -44,7 +44,7 @@ public:
 
 int main()
 {
-    matrix M1, M2, M3; 
+    matrix M1, M2, M3; //objects
 
     cout << "Enter elements for the first matrix:" << endl;
     M1.get(); 
@@ -53,10 +53,10 @@ int main()
     M2.get(); 
 
 
-    M3 = M1 + M2;
+    M3 = M1 + M2;  //addiction
 
     
-    M3.display();
+    M3.display();  //display results
 
     return 0;
 }
