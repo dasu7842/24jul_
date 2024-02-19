@@ -20,7 +20,7 @@ public:
     }
 
    
-    matrix operator+(matrix &m2)  //overloded operator
+    matrix operator+(matrix &m2)  // operator
     {
         matrix m3;
         for (int i = 0; i < 5; i++) //loop
