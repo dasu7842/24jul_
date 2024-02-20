@@ -3,7 +3,7 @@
 #include <iostream>
 #include<string.h>
 using namespace std;
-
+//class
 class student
 {
     string name, address;
@@ -11,6 +11,7 @@ class student
     int roll_no, std, sub_1, sub_2, sub_3, total;
 
 public:
+//input data from the user
     void get_data()
     {
         cout << "Enter Your Roll No. : ";
@@ -65,6 +66,7 @@ public:
     }
 
     void print_data()
+    //print the student's information
     {
         cout << endl
              << "Your roll no. : " << roll_no;
@@ -85,9 +87,9 @@ public:
     }
 };
 
-int main()
+int main()  //main functon
 {
-    student st;
+    student st;  //object
     st.get_data();
     st.call_grade();
     st.print_data();
