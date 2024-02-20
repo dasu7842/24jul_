@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-class maxno
+class maxno  //class
 {
-    int x, y;
+    int x, y;  //varible
 
-public:
+public:  //function
     friend int fd(maxno &obj);
 };
 
@@ -32,9 +32,9 @@ int fd(maxno &obj)
     }
 }
 
-int main()
+int main()  //main function
 {
-    maxno oo;
+    maxno oo;  //object
     fd(oo);
     return 0;
 }
