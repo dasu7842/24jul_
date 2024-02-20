@@ -2,22 +2,24 @@
 
 #include <iostream>
 #include<string.h>
-using namespace std;
+using namespace std;  //library file
 
-class person
+class person  //class
 {
-public:
+public:  //function
     string name;
     int age;
 };
 
+//derived class
 class student : public person
 {
 public:
     int sub_1, sub_2, sub_3, total;
     float per;
 
-    int get_data()
+// Function to get student data   
+int get_data()
     {
         cout << "Enter Student Name : ";
         cin >> name;
@@ -32,13 +34,15 @@ public:
         cin >> sub_3;
     }
 
-    float percentage()
+// Function to calculate percentage    
+float percentage()
     {
         total = sub_1 + sub_2 + sub_3;
         per = total / 300;
     }
 
-    int marksheet()
+ // Function to display marksheet    
+int marksheet()
     {
         cout << endl
              << "Student name : " << name;
@@ -56,7 +60,7 @@ public:
              << "Percentage : " << per;
     }
 };
-
+// Derived class
 class teacher : public person
 {
 public:
@@ -83,7 +87,7 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
     int choice;
     cout << "What you want to do : " << endl
@@ -93,14 +97,14 @@ int main()
 
     if (choice == 1)
     {
-        student sd;
+        student sd;  //object
         sd.get_data();
         sd.percentage();
         sd.marksheet();
     }
     else if (choice == 2)
     {
-        teacher t;
+        teacher t;  //object
         t.get_data();
         t.print_data();
     }
