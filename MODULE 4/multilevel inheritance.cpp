@@ -3,9 +3,9 @@
 #include <iostream>
 using namespace std;
 
-class a
+class a  //class
 {
-public:
+public:  //function
     a()
     {
         cout << endl
@@ -15,7 +15,7 @@ public:
 
 class b : public a
 {
-public:
+public:  //function
     b()
     {
         cout << endl
@@ -25,7 +25,7 @@ public:
 
 class c : public b
 {
-public:
+public:  //function
     c()
     {
         cout << endl
@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
     c c1;
     return 0;
