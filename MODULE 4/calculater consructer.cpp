@@ -3,17 +3,17 @@
 #include <iostream>
 using namespace std;
 
-class addition
+class addition  //class
 {
-public:
+public: // Constructor
     addition(float a, float b)
     {
         cout << endl
              << "Addtion : " << a + b;
     }
 };
-
-class substraction
+// Class for subtraction operation
+class substraction 
 {
 public:
     substraction(float a, float b)
@@ -30,7 +30,7 @@ public:
         }
     }
 };
-
+// Class for multiplication operation
 class multiplication
 {
 public:
@@ -40,7 +40,7 @@ public:
              << "Multiplication : " << a * b;
     }
 };
-
+// Class for division operation
 class division
 {
 public:
@@ -51,7 +51,7 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
     int n1, n2;
     cout << "Enter Number 1 : ";
