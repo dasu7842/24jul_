@@ -4,15 +4,16 @@ using namespace std;
 
 int main() {
 
-  char a;
-  float num1, num2;
+  char a;  //varible
+  float num1, num2; //varible
 
   cout << "Enter operator: +, -, *, /: ";
   cin >> a;
 
   cout << "Enter two numbers: ";
   cin >> num1 >> num2;
-
+ 
+ // Perform the operation based on the operator entered
   switch(a) {
 
     case '+':
