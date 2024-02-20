@@ -9,6 +9,7 @@ class car
     int year;
 
 public:
+         //function
     int get()
     {
         cout << "Enter car company name : ";
@@ -18,7 +19,7 @@ public:
         cout << "Enter year of launch : ";
         cin >> year;
     }
-
+     //function
     int set()
     {
         cout << endl
@@ -32,7 +33,7 @@ public:
 
 int main()
 {
-    car ca;
+    car ca;  //object
     ca.get();
     ca.set();
 }
