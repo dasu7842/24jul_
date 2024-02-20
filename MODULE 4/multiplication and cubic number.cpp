@@ -1,11 +1,11 @@
 // Write a program to find the multiplication values and the cubic values using inline function
 
 #include <iostream>
-using namespace std;
+using namespace std;  //library file
 
-class values
+class values  //class
 {
-public:
+public:  //function
     inline int multiplication(int x, int y)
     {
         return x * y;
@@ -17,10 +17,10 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
-    int number1, number2;
-    cout << "Enter value of number1 : ";
+    int number1, number2;  //varible
+    cout << "Enter value of number1 : ";  //to print
     cin >> number1;
 
     cout << "Enter value of number2 : ";
