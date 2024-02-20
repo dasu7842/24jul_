@@ -9,6 +9,7 @@ class date
     int day, month, year;
 
 public:
+        //function
     int get()
     {
         cout << "Enter a day : ";
@@ -56,9 +57,9 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
-    date dt;
+    date dt;  //object
     dt.get();
     dt.valid();
 }
