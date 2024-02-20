@@ -1,16 +1,16 @@
 // Write a C++ Program display Student Mark sheet using Multiple inheritance
 
 #include <iostream>
-using namespace std;
+using namespace std;  //library file
 
-class student
+class student  //class
 {
 public:
-    int roll_no, age, sub1, sub2, sub3, total;
+    int roll_no, age, sub1, sub2, sub3, total;  //varible
     float per;
     string name;
 
-    int get_data()
+    int get_data()  //function
     {
         cout << "Enter Roll No : ";
         cin >> roll_no;
@@ -21,7 +21,7 @@ public:
     }
 };
 
-class detail : public student
+class detail : public student  //function
 {
 public:
     int get_detail()
@@ -37,13 +37,13 @@ public:
 
 class marksheet : public student
 {
-public:
+public:  //function
     int mark_calc()
     {
         total = sub1 + sub2 + sub3;
         per = total / 300;
     }
-
+   //function
     int print_marksheet()
     {
         cout << endl
@@ -67,10 +67,10 @@ public:
 
 int main()
 {
-    detail d;
+    detail d; //object
     d.get_data();
     d.get_detail();
-    marksheet mark;
+    marksheet mark;  //object
     mark.mark_calc();
     mark.print_marksheet();
     return 0;
