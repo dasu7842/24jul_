@@ -2,7 +2,7 @@
 
 #include <iostream>
 using namespace std;
-
+//class
 class swaping
 {
     int x, y;
@@ -12,7 +12,7 @@ public:
 };
 
 int swp_no(swaping &obj)
-{
+{   // Input the two numbers from the user
     cout << "Enter number 1 : ";
     cin >> obj.x;
     cout << "Enter number 2 : ";
@@ -28,9 +28,9 @@ int swp_no(swaping &obj)
          << "Number 2 : " << obj.y;
 }
 
-int main()
+int main()//main function
 {
-    swaping g1;
+    swaping g1; // object
     swp_no(g1);
     return 0;
 }
