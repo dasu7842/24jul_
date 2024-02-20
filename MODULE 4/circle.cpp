@@ -10,6 +10,7 @@ class circle
     int radius;
 
 public:
+        //function
     int area()
     {
         cout << "Enter radius of circle : ";
@@ -19,14 +20,14 @@ public:
 
         cout << "Area of circle : " << area;
     }
-
+      //function
     int circumference()
     {
         cout << endl
              << "Enter radius of circle : ";
         cin >> radius;
 
-        float circumference = 2 * 3.14 * radius;
+        float circumference = 2 * 3.14 * radius;  //// Calculate area of the circle
 
         cout << "circumference of circle : " << circumference;
     }
@@ -34,7 +35,7 @@ public:
 
 int main()
 {
-    circle cc;
+    circle cc;  //object
     cc.area();
     cc.circumference();
     return 0;
