@@ -1,9 +1,10 @@
-//// Write a program of to sort the array using templates in c++
+// Write a program of to sort the array using templates in c++
 
 
 #include <iostream>
-using namespace std;
+using namespace std;  //library file
 
+//function
 template <class T>
 void bubbleSort(T arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
@@ -18,6 +19,7 @@ void bubbleSort(T arr[], int n) {
     }
 }
 
+//function
 template <class T>
 void printArray(T arr[], int size) {
     for (int i = 0; i < size; i++) {
@@ -26,7 +28,9 @@ void printArray(T arr[], int size) {
     cout << endl;
 }
 
-int main() {
+int main()  //main function
+{
+    // Arrays of different types
     int intArr[] = {5, 2, 9, 1, 3};
     double doubleArr[] = {3.5, 2.2, 1.1, 5.5, 4.4};
     char charArr[] = {'c', 'b', 'a', 'e', 'd'};
@@ -35,6 +39,7 @@ int main() {
     int doubleSize = sizeof(doubleArr) / sizeof(doubleArr[0]);
     int charSize = sizeof(charArr) / sizeof(charArr[0]);
 
+    // Displaying arrays before sorting
     cout << "Before sorting:" << endl;
     cout << "Integer array: ";
     printArray(intArr, intSize);
