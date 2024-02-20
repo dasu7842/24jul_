@@ -3,16 +3,16 @@
 #include <iostream>
 using namespace std;
 
-class access
+class access //base class
 {
 private:
-    int a;
+    int a; //private member
 
 public:
-    int b = 5;
+    int b = 5; .//public member
 
 protected:
-    int c = 20;
+    int c = 20; //protected member 
 };
 
 class test : public access
@@ -36,9 +36,9 @@ public:
 
 int main()
 {
-    test t;
+    test t;  //object
     t.print();
-    demo d;
+    demo d;   //object
     d.print();
 
     return 0;
