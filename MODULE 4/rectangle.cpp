@@ -2,14 +2,14 @@
 
 #include <iostream>
 
-using namespace std; 
+using namespace std; //library file
 
-class Rectangle
+class Rectangle   //class  
 {
     
-    int length, width;
+    int length, width;  //varible
 
-public:
+public: //function
 
     int area(int l, int w)
     {
@@ -19,7 +19,7 @@ public:
         return 0;
     }
 
-    
+    //function
     int perimeter(int l, int w)
     {
         this->length = l;
@@ -32,13 +32,13 @@ public:
 
 int main()
 {
-    int length, width; 
+    int length, width; //varible 
     cout << "Enter length of rectangle : ";
     cin >> length;
     cout << "Enter width of rectangle : ";
     cin >> width;
 
-    Rectangle rt;                
+    Rectangle rt;     //object            
     rt.area(length, width);      
     rt.perimeter(length, width); 
 }
