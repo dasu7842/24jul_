@@ -9,7 +9,7 @@ class banking
         int acno;
         char nam[50], acctype[50];
         float bal;  
-   public:
+   public:    //Constructor
         banking(int acc_no, char *name, char *acc_type, float balance)  
         {
                 acno=acc_no;
@@ -17,9 +17,9 @@ class banking
                 strcpy(acctype, acc_type);
                 bal=balance;
         }
-        void deposit();
-        void withdraw();
-        void display();
+        void deposit();   // Function to deposit money
+        void withdraw();  // function to withdraw money
+        void display();   // function to display account details
 };
 void banking::deposit()  
 {
@@ -45,7 +45,7 @@ void banking::display()
         cout<<"\n Account Type : "<<acctype;
         cout<<"\n Balance : "<<bal;  
 }
-int main()
+int main()  //main function
 {
         int acc_no;
         char name[100], acc_type[100];
