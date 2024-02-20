@@ -7,7 +7,8 @@ using namespace std;
 
 class cricketer
 {
-public:
+public: 
+//function
     string name, team;
     void get_data()
     {
@@ -19,6 +20,7 @@ public:
 };
 
 class batsman : public cricketer
+//function
 {
 public:
     int total_run, total_match, avg_run, best_perform;
@@ -35,7 +37,7 @@ public:
 
     int avg()
     {
-        avg_run = total_run / total_match;
+        avg_run = total_run / total_match;  //to calculate avg run
         return 0;
     }
 
@@ -56,7 +58,7 @@ public:
 
 int main()
 {
-    batsman ai;
+    batsman ai; //object
     ai.get_data();
     ai.get_details();
     ai.avg();
