@@ -1,26 +1,27 @@
 // Write a C++ Program to show access to Private Public and Protected using Inheritance
 
 #include <iostream>
-using namespace std;
+using namespace std;  //library file
 
-class accesses
+class accesses  //class
 {
 private:
-    int x; 
+    int x;   // private varible
 
 public:
-    int y;
+    int y;  //varible
 
 protected:
-    int z;
+    int z; //protected member varible
 };
 
+//derived class
 class test : public accesses
 {
 public:
     void print()
     {
-        cout << "y: I'm Public Property.";
+        cout << "y: I'm Public Property.";  //to print
     }
 };
 
@@ -34,10 +35,10 @@ public:
     }
 };
 
-int main()
+int main()  //main function
 {
-    test tt;
+    test tt;  //object
     tt.print();
-    demo dd;
+    demo dd;   //object
     dd.print();
 }
