@@ -3,15 +3,16 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle
+class Rectangle  // base class
 {
 public:
-    int area, l, w;
+    int area, l, w;  //public memebers
 };
 
-class rect_area : public Rectangle
+class rect_area : public Rectangle  //derived class
 {
 public:
+    //constucter
     rect_area()
     {
         cout << "Enter length of Rectangle : ";
@@ -21,15 +22,15 @@ public:
         cin >> w;
     }
 
-    void call_area()
+    void call_area() 
     {
-        area = l * w;
+        area = l * w;  //calcuate area
         cout << "Area of Rectangle : " << area;
     }
 };
 
 int main()
 {
-    rect_area aa;
+    rect_area aa;  //create object
     aa.call_area();
 }
