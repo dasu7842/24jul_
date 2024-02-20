@@ -4,12 +4,13 @@
 #include<string.h>
 using namespace std;
 
-class employee
-{
-    string name;
+class employee  //class
+{   //private member varible
+    string name;  
     int emp_id, salary, performance;
 
 public:
+        //Constructor
     employee()
     {
         cout << "Enter Employee id : ";
@@ -43,7 +44,7 @@ public:
         }
     }
 
-    int print()
+    int print()  // Function to print employee details
     {
         cout << endl
              << "Employee ID : " << emp_id;
@@ -56,6 +57,6 @@ public:
 
 int main()
 {
-    employee dd;
+    employee dd;  //object
     dd.print();
 }
