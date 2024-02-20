@@ -4,11 +4,12 @@
 
 using namespace std;
 
-class bank_account
+class bank_account  //class
 {
-    int acc_no, balance, deposite_amt, withdraw_amt;
+    int acc_no, balance, deposite_amt, withdraw_amt;  //varible
 
 public:
+        //function
     int 
     get_data()
     {
@@ -18,14 +19,14 @@ public:
         cin >> balance;
     }
 
-    int deposite()
+    int deposite()  //function to deposite money
     {
         cout << "Enter amount you want to diposite : ";
         cin >> deposite_amt;
         balance = balance + deposite_amt;
     }
 
-    int withdraw()
+    int withdraw()   //function to withdrawal money
     {
         cout << "Enter amount you want to withdraw : ";
         cin >> withdraw_amt;
@@ -40,7 +41,7 @@ public:
     }
 };
 
-int main()
+int main()  //function
 {
     int choice;
     bank_account bank_acc;
