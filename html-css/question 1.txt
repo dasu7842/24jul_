@@ -1,0 +1,47 @@
+(1)WEBSITE
+
+-> website is a collection of many web pages
+-> and devided on two part 
+-> home page and all web page
+ex. 
+www.tops-int.com,
+www.w3resourse.com,
+www.geeksforgeeks.org,
+www.programiz.com,
+www.techtarget.com,
+www.w3school.com,
+www.tutorialspoint.com,
+www.tutorialcup.com
+
+(2)WEBPAGE
+
+-> web pages are digital files 
+-> web pages make are using HTML
+-> Web page can access on a monitor and mobile using a Web browser
+
+(3)WEB BROWSER
+
+-> web browser is web application 
+-> web browser provide to multy sourse of information
+-> web browser canect to web server find to requarided information 
+-> web browser can access on mobile,computer and tablet...
+ex.google crom,safari,firefox...
+
+
+(4)WEB SERVER
+
+-> web server respond to client requests made over the World Wide Web
+-> web server is software and hardware
+-> Web server  is connected to hardware and internet and allow data in exchanged
+
+(5)HTML (HyperText Markup Language )
+
+-> It define the information and structure of web site
+-> It defines the content and structure of web content
+-> HTML is laguage for information designed to be displayed in a web browser
+-> He often works with language like css and javascript
+
+(6)CSS (Cascading Style Sheets)
+
+-> CSS describes how HTML elements are to be displayed on screen
+-> External stylesheets are stored in CSS files
