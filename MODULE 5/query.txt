@@ -1,0 +1,201 @@
+1. Create Table Name : Student and Exam
+ans->CREATE TABLE `exam` (
+  `rollno` int(11),
+  `s_code` varchar(20),
+  `marks` int(11),
+  `p_code` varchar(30)
+
+);
+CREATE TABLE `student` (
+  `rollno` int(11),
+  `name` varchar(20),
+  `branch` varchar
+);
+
+
+2. Create table given below: Employee and IncentiveTable
+
+ans->
+     CREATE TABLE `employee` (
+  `employeeid` int(10),
+  `first_name` varchar(20),
+  `last_name` varchar(30),
+  `salary` int(10),
+  `joining_date` varchar(35),
+  `department` varchar(50) 
+);
+
+INSERT INTO `employee` (`employeeid`, `first_name`, `last_name`, `salary`, `joining_date`, `department`) VALUES
+(1, 'john', 'abraham', 1000000, '1-jan-13 12:00 am', 'banking'),
+(2, 'michael', 'clarke', 800000, '1-jan-13 12:00 am', 'insurance'),
+(3, 'roy', 'thomas', 700000, '1-feb-13 12:00 am', 'banking'),
+(4, 'tom', 'jose', 600000, '1-feb-13 12:00 am', 'insurance'),
+(5, 'jerry', 'pinto', 650000, '1-feb-13 12:00 am', 'insurance'),
+(6, 'philip', 'mathew', 750000, '1-jan-13 12:00 am', 'services'),
+(7, 'tastname1', '123', 650000, '1-jan-13 12:00am', 'services'),
+(8, 'testname2', 'lname%', 600000, '1-feb-13 12:00am', 'insurance');
+
+CREATE TABLE `incentive` (
+  `employee_ref_id` int(11),
+  `incentive_date` varchar(40),
+  `incentive_amount` int(11)
+);
+
+INSERT INTO `incentive` (`employee_ref_id`, `incentive_date`, `incentive_amount`) VALUES
+(1, '1-feb-13', 5000),
+(2, '1-feb-13', 3000),
+(3, '1-feb-13', 4000),
+(1, '1-jan-13', 4500),
+(2, '1-jan-13', 3500);
+
+3. Get First_Name from employee table using Tom name “Employee Name”.
+ans->
+     select first_name from employee;
+
+4. Get FIRST_NAME, Joining Date, and Salary from employee table.
+ans->
+     select first_name,joining_date,salary from employee;
+
+5. Get all employee details from the employee table order by First_Name Ascending and Salary descending?
+ans->
+     select * from employee order by first_name asc,salary desc;
+6. Get employee details from employee table whose first name contains ‘J’.
+ans->
+     select * from employee where first_name like '%j'; 
+
+7. Get department wise maximum salary from employee table order by
+ans->
+     select department,max(salary) maxsalary from employee group by department order by maxsalary;
+
+8. salaryascending?
+ans-> 
+     SELECT *FROM employee ORDER BY salary ASC;
+
+9. Select first_name, incentive amount from employee and incentives table
+forthose employees who have incentives and incentive amount greater than
+3000.
+ans->  
+      select employee.first_name,incentive.incentive_amount from employee inner join incentive on employee.employeeid=incentive.employee_ref_id and incentive_amount >3000 where incentive_amount order by incentive_amount;
+
+10. Create After Insert trigger on Employee table which insert records in
+viewtable.
+ans->
+     delimiter $$ create TRIGGER inserts after insert on employee for each row begin insert into employee_detail set skill = new.last_name;
+end$$
+
+11.Create table given below: Salesperson and Customer
+ans->
+     CREATE TABLE customer
+ (
+  pk_cnm int(11),
+  cname varchar(20),
+  city varchar(30),
+  rating int(11),
+  fk_sno int(11)
+);
+
+INSERT INTO `customer` (`pk_cnm`, `cname`, `city`, `rating`, `fk_sno`) VALUES
+(201, 'hoffman', 'london', 100, 1001),
+(202, 'giovanne', 'roe', 200, 1003),
+(203, 'liu', 'san jose', 300, 1002),
+(204, 'grass', 'barcelona', 100, 1002),
+(206, 'clemens', 'london', 300, 1007),
+(207, 'pereira', 'roe', 100, 1004);
+
+CREATE TABLE salseperson
+(
+  pk_sno int(11),
+  sname varchar(30),
+  city varchar(20),
+  comm float
+);
+
+INSERT INTO salseperson (pk_sno,sname,city,comm)VALUES
+(1001, 'peel', 'london', 0.12),
+(1002, 'serres', 'san jose', 0.13),
+(1004, 'motika', 'londan', 0.11),
+(1007, 'rafkin', 'barcelona', 0.15),
+(1003, 'axelrod', 'new york', 0.1);
+
+
+12.Retrieve the below data from above table.
+ans-> done that in query
+
+13.All orders for more than $1000.
+ans->
+     select * from customer where fk_sno >1001;
+
+14.Names and cities of all salespeople in London with commission above 0.12
+ans->
+    SELECT sname,city FROM salseperson WHERE city = 'London' AND comm > .12;
+
+15.All salespeople either in Barcelona or in London
+ans->
+     elect * from salseperson where city ='london' or 'barcelona';
+
+16.All salespeople with commission between 0.10 and 0.12. (Boundary valuesshould be excluded).
+ans->
+     select * from salseperson where comm between 0.10 and 0.12;
+
+17.All customers excluding those with rating <= 100 unless they are located inroome.
+ans->
+     select * from customer where rating >100 and city = 'roe';
+
+18. Write a SQL statement that displays all the information about all
+salespeople.
+ans->
+     select * from salespeople;
+
+19. From the following table, write a SQL query to find orders that are 
+delivered by a salesperson with ID. 5001. Return ord_no, ord_date, 
+purch_amt.
+ans->
+     select order_no,order_date,purch_amount from orders where salesman_id = 5001;
+
+20. From the following table, write a SQL query to select a range of 
+products whose price is in the range Rs.200 to Rs.600. Begin and end 
+values are included. Return pro_id, pro_name, pro_price, and pro_com.
+ans->
+     select pro_id,pro_name,pro_price from item_mast where between 200 and 600;
+
+21. From the following table, write a SQL query to calculate the average 
+price for a manufacturer code of 16. Return avg. 
+ans->
+     select ave(pro_price) from item_mast where pro_com = 16;
+
+22. From the following table, write a SQL query to display the pro_name 
+as 'Item Name' and pro_priceas 'Price in Rs.' 
+ans-> 
+     select pro_name as item_name,pro_price as price_in_rs from item_mast;
+
+23. From the following table, write a SQL query to find the items whose 
+prices are higher than or equal to $250. Order the result by product price in 
+descending, then product name in ascending. Return pro_name and 
+pro_price.
+ans->
+     select pro_name,pro_price from item_mast where pro_price >=250 order by pro_price desc,pro_name asc;
+
+24. From the following table, write a SQL query to calculate average 
+price of the items for each company. Return average price and company 
+code.
+ans->
+     select avg(pro_price),pro_id from item_mast group by pro_com order by pro_id;
+
+
+
+
+
+      
+
+
+
+
+
+
+      
+   
+
+
+
+
+
