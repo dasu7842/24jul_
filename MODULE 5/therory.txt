@@ -45,8 +45,8 @@ ans->
  ->Rule 12: The Non-subversion Rule
 
 5. What do you understand By Data Redundancy?
-ans->
-      data redundancy is when an organization store the same data in multiple place at the same time.
+ans->Data redundancy refers to the practice of keeping data in two or more places within a database or data storage system.
+      
 
 6. What is DDL Interpreter?
 
@@ -87,7 +87,7 @@ ans -> SQL constraints are used to specify rules for the data table
 
 ->The savepoint is use for dividing,breaking a transaction.
 ->save point use statement multi time use.
-
+->Savepoint is a command in SQL that is used with the rollback command.
  - create savepoint savepoint_name;
  - create savepoint savepoint1;
 
