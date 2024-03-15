@@ -12,9 +12,9 @@ CREATE TABLE AccountHolder (
     city VARCHAR(100),
     contact VARCHAR(20),
     date_of_account_created DATE,
-    account_status ENUM('active', 'terminated'),
+    account_status ('active', 'terminated'),
     account_type VARCHAR(50),
-    balance DECIMAL(10, 2)
+    balance (10, 2)
 );
 
 
