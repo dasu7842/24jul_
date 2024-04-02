@@ -2,7 +2,7 @@
 CREATE TABLE Bank (
     branch_id INT PRIMARY KEY,
     branch_name VARCHAR(100),
-    branch_city VARCHAR(100)
+    branch_city VARCHAR(189)
 );
 
 CREATE TABLE AccountHolder (
